@@ -5,7 +5,7 @@
 3. Makesure to follow the instructions below
 4. Checkout the design [https://www.figma.com/file/U4XHhN1I1iEUrtZhFGbRMd/Investmenet-Challenge?node-id=0%3A1]
 
-In order to get stock information, gohead an open an IEX account
+In order to get financial data, open a free account using [https://polygon.io/]
 
 # Starting the coding challenge challenge
 
