@@ -1,9 +1,11 @@
 ## Introduction
 
 1. Fork this Repo
-2. Check the sample container inside src/ExampleContainer
-3. Makesure to follow the instructions below
-4. Checkout the design [https://www.figma.com/file/U4XHhN1I1iEUrtZhFGbRMd/Investmenet-Challenge?node-id=0%3A1]
+2. Check the sample container inside src/ExampleContainer and use it as a CodeStandard Sample. 
+3. Follow the commit structure and the PR process, even as you are progressively working on features.
+4. The goal is for us to assess your current technical skills as well as organizational skills as you start working on this 
+6. Checkout the design [https://www.figma.com/file/U4XHhN1I1iEUrtZhFGbRMd/Investmenet-Challenge?node-id=0%3A1]
+ Note: Feel free to submit as much as you can, its not required for you to complete this assesment. 
 
 In order to get financial data, open a free account using [https://polygon.io/]
 
@@ -15,11 +17,6 @@ In order to get financial data, open a free account using [https://polygon.io/]
 - [Commit Message Guidelines](#commit)
 
 ## <a name="feature"></a> Missing a Feature?
-
-- For a **Major Feature**, first open an issue and outline your proposal so that it can be discussed.
-  This process allows us to better coordinate our efforts, prevent duplication of work, and help you to craft the change so that it is successfully accepted into the project.
-
-  **Note**: Adding a new topic to the documentation, or significantly re-writing a topic, counts as a major feature.
 
 - **Small Features** can be crafted and directly [submitted as a Pull Request](#submit-pr).
 
