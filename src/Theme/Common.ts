@@ -21,6 +21,14 @@ export default function ({ Colors, ...args }: ThemeCommonParams) {
       backgroundReset: {
         backgroundColor: Colors.transparent,
       },
+
+      backgroundStart: {
+        backgroundColor: Colors.backgroundGray,
+      },
+      backgroundButton: {
+        backgroundColor: Colors.pink,
+      },
+
       textInput: {
         borderWidth: 1,
         borderColor: Colors.text,

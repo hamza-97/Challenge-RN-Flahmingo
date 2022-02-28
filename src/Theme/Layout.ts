@@ -82,6 +82,9 @@ export default function ({}: ThemeVariables): ThemeLayout {
     selfStretch: {
       alignSelf: 'stretch',
     },
+    selfCenter: {
+      alignSelf: 'center',
+    },
     /* Sizes Layouts */
     fill: {
       flex: 1,

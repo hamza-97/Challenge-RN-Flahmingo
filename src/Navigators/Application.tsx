@@ -5,6 +5,7 @@ import { NavigationContainer } from '@react-navigation/native'
 import { StartupContainer } from '@/Containers'
 import { useTheme } from '@/Hooks'
 import MainNavigator from './Main'
+import OnboardingNavigator from './Onboarding'
 import { navigationRef } from './utils'
 
 const Stack = createStackNavigator()
@@ -20,6 +21,13 @@ const ApplicationNavigator = () => {
         <StatusBar barStyle={darkMode ? 'light-content' : 'dark-content'} />
         <Stack.Navigator screenOptions={{ headerShown: false }}>
           <Stack.Screen name="Startup" component={StartupContainer} />
+          <Stack.Screen
+            name="OnBoarding"
+            component={OnboardingNavigator}
+            options={{
+              animationEnabled: false,
+            }}
+          />
           <Stack.Screen
             name="Main"
             component={MainNavigator}

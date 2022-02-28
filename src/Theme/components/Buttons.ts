@@ -4,13 +4,13 @@ import { ThemeCommonParams } from '@/Theme/theme.type'
 export default function ({ Colors, Gutters, Layout }: ThemeCommonParams) {
   const base = {
     ...Layout.center,
-    ...Gutters.largeHPadding,
-    height: 40,
-    backgroundColor: Colors.primary,
+    width: 250,
+    height: 56,
+    backgroundColor: Colors.pink,
   }
   const rounded = {
     ...base,
-    borderRadius: 20,
+    borderRadius: 16,
   }
 
   return StyleSheet.create({
@@ -18,13 +18,13 @@ export default function ({ Colors, Gutters, Layout }: ThemeCommonParams) {
     rounded,
     outline: {
       ...base,
-      backgroundColor: Colors.transparent,
+      backgroundColor: Colors.pink,
       borderWidth: 2,
       borderColor: Colors.primary,
     },
     outlineRounded: {
       ...rounded,
-      backgroundColor: Colors.transparent,
+      backgroundColor: Colors.pink,
       borderWidth: 2,
       borderColor: Colors.primary,
     },

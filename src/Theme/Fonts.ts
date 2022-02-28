@@ -19,6 +19,21 @@ export default function ({ FontSize, Colors }: ThemeVariables): ThemeFonts {
       fontSize: FontSize.regular,
       color: Colors.text,
     },
+    buttonsText: {
+      fontSize: FontSize.regular,
+      color: Colors.white,
+      textAlign: 'center',
+    },
+    textRegular2: {
+      fontSize: FontSize.regular * 1.2,
+      color: Colors.text,
+    },
+    textRegular3: {
+      fontSize: FontSize.regular * 1.4,
+      fontWeight: '600',
+      lineHeight: 28,
+      color: Colors.text,
+    },
     textLarge: {
       fontSize: FontSize.large,
       color: Colors.text,

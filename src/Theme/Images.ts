@@ -8,5 +8,7 @@ import { ThemeImages, ThemeVariables } from '@/Theme/theme.type'
 export default function ({}: ThemeVariables): ThemeImages {
   return {
     logo: require('@/Assets/Images/TOM.png'),
+    smallIcon: require('@/Assets/Images/ICON.png'),
+    welcomeImage: require('@/Assets/Images/WELCOME.png'),
   }
 }
