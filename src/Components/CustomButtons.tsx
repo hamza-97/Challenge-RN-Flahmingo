@@ -19,7 +19,7 @@ const CustomButtons = ({ text, screenName }: Props) => {
         Gutters.regularVPadding,
         Gutters.largeTMargin,
       ]}
-      onPress={() => navigateAndSimpleReset(screenName)}
+      onPress={() => navigateAndSimpleReset(`${screenName}`)}
     >
       <Text style={[Fonts.buttonsText]}>{text}</Text>
     </TouchableOpacity>
