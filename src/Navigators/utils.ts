@@ -16,7 +16,7 @@ type RootStackParamList = {
 
 export const navigationRef = createNavigationContainerRef<RootStackParamList>()
 
-export function navigate(name: keyof RootStackParamList, params: any) {
+export function navigate(name: any, params: any) {
   if (navigationRef.isReady()) {
     navigationRef.navigate(name, params)
   }
@@ -30,6 +30,12 @@ export function navigateAndReset(routes = [], index = 0) {
         routes,
       }),
     )
+  }
+}
+
+export function navigateGoBack() {
+  if (navigationRef.isReady()) {
+    navigationRef.goBack()
   }
 }
 

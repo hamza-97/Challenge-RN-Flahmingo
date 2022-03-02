@@ -1,3 +1,6 @@
 export { default as Brand } from './Brand'
 export { default as CustomButtons } from './CustomButtons'
 export { default as CenterText } from './CenterText'
+export { default as CustomText } from './CustomText'
+export { default as OnboardingHeader } from './OnboardingHeader'
+export { default as PasswordGuideLineCard } from './PasswordGuideLineCard'

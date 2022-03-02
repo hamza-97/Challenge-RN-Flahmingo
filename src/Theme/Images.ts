@@ -10,5 +10,8 @@ export default function ({}: ThemeVariables): ThemeImages {
     logo: require('@/Assets/Images/TOM.png'),
     smallIcon: require('@/Assets/Images/ICON.png'),
     welcomeImage: require('@/Assets/Images/WELCOME.png'),
+    backArrow: require('@/Assets/Images/DOWN.png'),
+    eye: require('@/Assets/Images/EYE.png'),
+    fingerprint: require('@/Assets/Images/FINGERPRINT.png'),
   }
 }

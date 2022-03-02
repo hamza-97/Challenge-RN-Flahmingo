@@ -11,9 +11,18 @@ import { ThemeVariables, ThemeFonts } from '@/Theme/theme.type'
  */
 export default function ({ FontSize, Colors }: ThemeVariables): ThemeFonts {
   return StyleSheet.create({
+    textExtraSmall: {
+      fontSize: FontSize.extraSmall,
+      color: Colors.pink,
+    },
     textSmall: {
       fontSize: FontSize.small,
       color: Colors.text,
+    },
+    textSmallBold: {
+      fontSize: FontSize.small,
+      fontWeight: '500',
+      color: Colors.pink,
     },
     textRegular: {
       fontSize: FontSize.regular,
