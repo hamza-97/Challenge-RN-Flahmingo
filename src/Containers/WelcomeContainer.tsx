@@ -33,7 +33,7 @@ const WelcomeContainer = () => {
         text="The best UI Kit for your next health and fitness project!"
       />
       <Image source={Images.welcomeImage} />
-      <CustomButtons text="Get Started" screenName={'Main'} />
+      <CustomButtons text="Get Started" screenName={'EnterPhone'} param={''} />
       <TouchableOpacity style={[Layout.rowCenter, Gutters.largeTMargin]}>
         <CenterText
           textStyle={Fonts.textSmall}

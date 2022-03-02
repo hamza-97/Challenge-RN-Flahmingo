@@ -2,14 +2,15 @@ import React from 'react'
 import { TouchableOpacity, Text } from 'react-native'
 import { useTheme } from '@/Hooks'
 import { color } from 'react-native-reanimated'
-import { navigateAndSimpleReset } from '@/Navigators/utils'
+import { navigate } from '@/Navigators/utils'
 
 interface Props {
   text?: string
   screenName?: string
+  param?: string
 }
 
-const CustomButtons = ({ text, screenName }: Props) => {
+const CustomButtons = ({ text, screenName, param }: Props) => {
   const { Common, Gutters, Fonts } = useTheme()
   return (
     <TouchableOpacity
@@ -19,7 +20,7 @@ const CustomButtons = ({ text, screenName }: Props) => {
         Gutters.regularVPadding,
         Gutters.largeTMargin,
       ]}
-      onPress={() => navigateAndSimpleReset(`${screenName}`)}
+      onPress={() => navigate(`${screenName}`, param)}
     >
       <Text style={[Fonts.buttonsText]}>{text}</Text>
     </TouchableOpacity>
@@ -28,6 +29,8 @@ const CustomButtons = ({ text, screenName }: Props) => {
 
 CustomButtons.defaultProps = {
   text: 'Get Started',
+  screeName: '',
+  param: '',
 }
 
 export default CustomButtons

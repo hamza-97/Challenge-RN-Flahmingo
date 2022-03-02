@@ -28,6 +28,8 @@ export const Colors: ThemeColors = {
   purple: '#7265E3',
   subHeadingText: '#4C5980',
   pink: '#FF63AF',
+  lightPurple: '#E1DDF5',
+  passwordStrength: '#AF8EFF',
 }
 
 export const NavigationColors: Partial<ThemeNavigationColors> = {
@@ -38,6 +40,7 @@ export const NavigationColors: Partial<ThemeNavigationColors> = {
  * FontSize
  */
 export const FontSize: ThemeFontSize = {
+  extraSmall: 12,
   small: 16,
   regular: 20,
   large: 40,
