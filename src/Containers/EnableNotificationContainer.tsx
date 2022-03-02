@@ -2,33 +2,27 @@ import { useTheme } from '@/Hooks'
 import { navigateAndSimpleReset } from '@/Navigators/utils'
 import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import {
-  SafeAreaView,
-  View,
-  TouchableOpacity,
-  TextInput,
-  Image,
-} from 'react-native'
+import { SafeAreaView, View, Image } from 'react-native'
 import { useDispatch } from 'react-redux'
-import { CustomButtons } from '@/Components'
-import { CenterText } from '@/Components'
+import {
+  CustomButtons,
+  CenterText,
+  NotificationCard,
+  HorizontalLine,
+} from '@/Components'
 import OnboardingHeader from '@/Components/OnboardingHeader'
 
-const FingerprintContainer = () => {
+const EnableNotificationContainer = () => {
   const { t } = useTranslation()
   const { Common, Fonts, Colors, Gutters, Layout, Images } = useTheme()
 
   return (
     <SafeAreaView style={[Layout.fill, Common.backgroundStart]}>
       <OnboardingHeader
-        prev={'EnterPassword'}
-        next={'EnableNotification'}
+        prev={'Fingerprint'}
+        next={'SetWeight'}
         text={'Skip'}
         progress={0.8}
-      />
-      <Image
-        style={[Layout.selfCenter, Gutters.extraLargeTMargin]}
-        source={Images.fingerprint}
       />
 
       <CenterText
@@ -45,22 +39,28 @@ const FingerprintContainer = () => {
           Gutters.regularVPadding,
           Fonts.textRegular3,
         ]}
-        text="Enable Fingerprint"
+        text="Do you want to turn on notification?"
       />
-
-      <CenterText
-        textStyle={[
-          Gutters.extraLargeHPadding,
-          Fonts.textSmall,
-          { color: Colors.subHeadingText },
-        ]}
-        text="If you enable touch ID, you don’t need to enter your password when you login. "
+      <Image
+        style={[Layout.selfCenter, Gutters.largeTMargin]}
+        source={Images.notification}
       />
-      <View style={[Layout.center, Gutters.extraLargeTMargin]}>
-        <CustomButtons text="Activate" screenName="Fingerprint" />
+      <NotificationCard icon={Images.reminderIcon} text="New weekly reminder" />
+      <HorizontalLine />
+      <NotificationCard
+        icon={Images.stockReminderIcon}
+        text="Stocks reminder"
+      />
+      <HorizontalLine />
+      <NotificationCard
+        icon={Images.personalisedIcon}
+        text="Personalised program"
+      />
+      <View style={[Layout.center, Gutters.LargeTMargin]}>
+        <CustomButtons text="Allow" screenName="EnableNotification" />
       </View>
     </SafeAreaView>
   )
 }
 
-export default FingerprintContainer
+export default EnableNotificationContainer

@@ -13,5 +13,10 @@ export default function ({}: ThemeVariables): ThemeImages {
     backArrow: require('@/Assets/Images/DOWN.png'),
     eye: require('@/Assets/Images/EYE.png'),
     fingerprint: require('@/Assets/Images/FINGERPRINT.png'),
+    notification: require('@/Assets/Images/NOTIFICATION.png'),
+    weight: require('@/Assets/Images/WEIGHT.png'),
+    personalisedIcon: require('@/Assets/Icons/PERSONALISED_ICON.png'),
+    reminderIcon: require('@/Assets/Icons/REMINDER_ICON.png'),
+    stockReminderIcon: require('@/Assets/Icons/STOCK_REMINDER_ICON.png'),
   }
 }

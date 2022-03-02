@@ -6,6 +6,7 @@ import EnterPhoneContainer from '@/Containers/EnterPhoneContainer'
 import VerifyContainer from '@/Containers/VerifyContainer'
 import EnterPasswordContainer from '@/Containers/EnterPasswordContainer'
 import FingerprintContainer from '@/Containers/FingerprintContainer'
+import EnableNotificationContainer from '@/Containers/EnableNotificationContainer'
 
 const Stack = createStackNavigator()
 
@@ -36,6 +37,11 @@ const OnboardingNavigator = () => {
       <Stack.Screen
         name="Fingerprint"
         component={FingerprintContainer}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="EnableNotification"
+        component={EnableNotificationContainer}
         options={{ headerShown: false }}
       />
     </Stack.Navigator>
