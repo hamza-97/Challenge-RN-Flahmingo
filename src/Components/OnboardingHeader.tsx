@@ -3,7 +3,7 @@ import { Text, View, TouchableOpacity, Image } from 'react-native'
 import { useTheme } from '@/Hooks'
 import { color } from 'react-native-reanimated'
 
-import { navigateAndSimpleReset, navigateGoBack } from '@/Navigators/utils'
+import { navigate, navigateGoBack } from '@/Navigators/utils'
 
 import ProgressBar from 'react-native-progress/Bar'
 
@@ -37,7 +37,7 @@ const OnboardingHeader = ({ text, prev, next, progress }: Props) => {
         unfilledColor={Colors.lightPurple}
         style={{ borderRadius: 20 }}
       />
-      <TouchableOpacity onPress={() => navigateAndSimpleReset(`${next}`)}>
+      <TouchableOpacity onPress={() => navigate(`${next}`)}>
         <Text style={[Fonts.textSmallBold]}>{text}</Text>
       </TouchableOpacity>
     </View>
